@@ -1,0 +1,2867 @@
+
+> socket-io-test_dev_typeorm@0.0.1 test /home/azolot/Documents/Projects/flamingo/DEV/main/server
+> mocha --require ts-node/register --exit test/**/*.ts
+
+
+
+
+MainPath: /home/azolot/Documents/Projects/flamingo/DEV/main/server/
+
+
+
+
+
+  Tests the basic functionality
+    - Check database initialization
+
+  Checks the Database initialization...
+    - Should check the Log-in...
+    - Should check the base table handler - Roles
+    - Should check the base table handler - Currency
+    - Should check the base table handler - Company
+
+  Checks the User basic user-related functions
+
+        
+        *****************************************************************************
+        primaryConnectionData 166 location: /home/azolot/Documents/Projects/flamingo/DEV/main/server/db/main/test_main.sqlite
+        *****************************************************************************
+
+        
+
+
+                        *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+
+                        databaseAdmin.initialized 187 PROMISE FINISHED
+                        *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+
+                        
+                        
+
+                        
+                *   *   *   *   FINISHED PROMISE   *   *   *   *
+                
+                
+
+
+                *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+
+                databaseAdmin.initialized 214 TO RETURN
+                *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+
+
+                
+    Tests the SuperAdmin functions
+      - Should test the SuperAdmin - Creation
+      - Should test basic log-in, log-out
+      - Should test the SuperAdmin - Login and LogOut
+      - Should test the SuperAdmin Update.
+    Tests the Admin functions
+      - Creates 3 Admin Accounts
+      - LogIn and LogOut
+      - Updates an admin profile
+      - Update an Admin Role
+      - Should remove admin 3 (physical) and 4 (logical)
+      - Should restore admin 4 (logical)
+    Tests the Client Functions
+      - Should test the Client - Creation
+      - Should test the Client - Update
+      - Should test the Client Payment - Add
+      - Should test the Client - Deletion
+      - Should test the Client - Restore (logical)
+    Tests the company functions
+      - Should update the company to: undefined
+    Test Search
+      - Should test user search
+      - Should test the payment search
+    Should test the logging
+      - Should search logs
+
+  Should parse and import records from .txt
+
+        
+        *****************************************************************************
+        primaryConnectionData 166 location: /home/azolot/Documents/Projects/flamingo/DEV/main/server/db/main/test_main.sqlite
+        *****************************************************************************
+
+        
+
+        
+        
+        paths:  { mainDBDumpCommand: '"/home/azolot/Documents/Projects/flamingo/DEV/main/server/bin/sqlite-tools-linux-x86-3260000/sqlite3" "/home/azolot/Documents/Projects/flamingo/DEV/main/server/db/main/test_main.sqlite" < "/home/azolot/Documents/Projects/flamingo/DEV/main/server/db/dump/commands/dump_main_commands.txt"',
+  auditDBDumpCommand: '"/home/azolot/Documents/Projects/flamingo/DEV/main/server/bin/sqlite-tools-linux-x86-3260000/sqlite3" "/home/azolot/Documents/Projects/flamingo/DEV/main/server/db/main/test_audit.sqlite" < "/home/azolot/Documents/Projects/flamingo/DEV/main/server/db/dump/commands/dump_audit_commands.txt"',
+  dumpMainLocation: '/home/azolot/Documents/Projects/flamingo/DEV/main/server/db/dump/sql/dump_main.sql',
+  dumpAuditLocation: '/home/azolot/Documents/Projects/flamingo/DEV/main/server/db/dump/sql/dump_audit.sql',
+  filePrefix: '2019_1_28_23_24_13_',
+  zipFileLocation: '/home/azolot/Documents/Projects/flamingo/DEV/main/server/db/dump/zip/2019_1_28_23_24_13_dump.zip' } 
+        
+        
+        
+        
+exportManager - 848
+exportManager - 852
+exportManager - 859
+exportManager - 864
+exportManager - 874
+exportManager - 882
+exportManager - 891
+exportManager - 916 { finished: true }
+
+                        
+                        ************************************************************************
+                        915: EXPORT GENERATED
+                        ************************************************************************
+                        
+                        
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDAT051998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 3 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDAT072008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDAT122000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDAT19972008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDAT19982005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDAT20052008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDAT20082007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 5 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR1993.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 8 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR1994.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 6 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR1995.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 9 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR1996.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 20 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR1997.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 12 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR1998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 21 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR1999.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 20 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 49 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR200106.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 45 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2002.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 37 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 51 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2004.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 79 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 121 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 140 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 197 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 148 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2009.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Fri Feb 01 1980 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Sun Jun 21 22009 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 7500
+                            Cantidad de la base de datos: 7500
+                            //
+                            records[i]: {"ci":"20028458","phone":"","name":"ASTRID","surName":"BENCOMO","ammount":"75","address":"SAN ANTONIO","inscription_day":"28","inscription_month":"ABR","inscription_year":"2009","due_date_day":"28","due_date_month":"MAY","due_date_year":"22009"}
+                            existingUser.membership: {"id":832,"createdAt":"2019-01-28T12:25:47.000Z","updatedAt":"2019-01-29T03:21:54.000Z","status":1,"cutDate":"1980-02-01T04:00:00.000Z","monthAmmount":7500,"inscriptionDate":"2009-05-24T04:30:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 177 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2010.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 126 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 152 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2012.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 167 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2013.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 200 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2014.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 164 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2015.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 79 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2016.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 35 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2017.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 43 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR2018.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 2 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATABR95.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 5 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO1991.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO1993.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 3 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO1994.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 16 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO1995.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 27 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO1996.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 23 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO1997.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 50 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO1998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 55 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO1999.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 59 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 48 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 74 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2002.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 68 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 104 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2004.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 111 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 217 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 235 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 248 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 195 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2009.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 299 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2010.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Fri Feb 01 1980 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Fri May 06 22016 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 140000
+                            Cantidad de la base de datos: 140000
+                            //
+                            records[i]: {"ci":"11177916","phone":"","name":"ROSANNA","surName":"RIOS","ammount":"1.400","address":"SAN ANTONIO R-3016 ","inscription_day":"11","inscription_month":"AGO","inscription_year":"2010","due_date_day":"12","due_date_month":"ABR","due_date_year":"22016"}
+                            existingUser.membership: {"id":3799,"createdAt":"2019-01-28T12:30:47.000Z","updatedAt":"2019-01-29T03:21:54.000Z","status":1,"cutDate":"1980-02-01T04:00:00.000Z","monthAmmount":140000,"inscriptionDate":"2010-09-02T04:30:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 276 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 254 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2012.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 184 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2013.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 217 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2014.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Fri Feb 01 1980 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Mon Jan 14 2019 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 14000
+                            Cantidad de la base de datos: 100000
+                            //
+                            records[i]: {"ci":"22667514","phone":"","name":"JESSICA","surName":"TRANA","ammount":"140","address":"SAN","inscription_day":"06","inscription_month":"AGO","inscription_year":"2014","due_date_day":"22","due_date_month":"DIC","due_date_year":"2018"}
+                            existingUser.membership: {"id":4764,"createdAt":"2019-01-28T12:32:41.000Z","updatedAt":"2019-01-29T03:21:55.000Z","status":1,"cutDate":"1980-02-01T04:00:00.000Z","monthAmmount":100000,"inscriptionDate":"2014-08-30T04:30:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 126 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2015.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 75 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2016.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Fri Feb 01 1980 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Sat Jan 20 2018 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 1300000
+                            Cantidad de la base de datos: 1300000
+                            //
+                            records[i]: {"ci":"22035541","phone":"","name":"CHIRISTIAN","surName":"OTALORA","ammount":"13.000","address":"","inscription_day":"25","inscription_month":"AGO","inscription_year":"2016","due_date_day":"27","due_date_month":"DIC","due_date_year":"2017"}
+                            existingUser.membership: {"id":4952,"createdAt":"2019-01-28T12:33:04.000Z","updatedAt":"2019-01-29T03:21:55.000Z","status":1,"cutDate":"1980-02-01T04:00:00.000Z","monthAmmount":1300000,"inscriptionDate":"2016-09-22T04:00:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 216 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2017.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 135 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO2018.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATAGO22007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 2 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC1995.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 3 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC1996.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 2 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC1997.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 3 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC1998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 5 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC1999.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 12 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 7 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 31 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2002.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 19 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 22 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2004.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 35 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 53 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 66 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 52 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2008.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Fri Feb 01 1980 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Mon Jul 24 20158 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 55000
+                            Cantidad de la base de datos: 55000
+                            //
+                            records[i]: {"ci":"6851504","phone":"","name":"ESTRE","surName":"TORRES","ammount":"550","address":"SAN ANTONIO T 977","inscription_day":"11","inscription_month":"DIC","inscription_year":"2008","due_date_day":"01","due_date_month":"JUL","due_date_year":"20158"}
+                            existingUser.membership: {"id":5608,"createdAt":"2019-01-28T12:34:23.000Z","updatedAt":"2019-01-29T03:21:55.000Z","status":1,"cutDate":"1980-02-01T04:00:00.000Z","monthAmmount":55000,"inscriptionDate":"2009-01-08T04:30:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 47 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2009.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 80 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2010.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 73 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 75 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2012.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                    *****************************
+                    Se obtuvieron 99 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2013.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 60 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2014.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                    *****************************
+                    Se obtuvieron 47 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2015.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 38 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2016.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 107 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2017.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 23 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATDIC2018.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE19902003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 2 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE1991.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 2 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE1992.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 4 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE1993.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 3 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE1994.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 14 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE1995.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 30 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE1996.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 20 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE1997.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 35 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE1998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 40 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE1999.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 31 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 37 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 49 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2002.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 84 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 135 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2004.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Fri Feb 01 1980 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Thu Dec 07 20152 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 75000
+                            Cantidad de la base de datos: 75000
+                            //
+                            records[i]: {"ci":"19044223","phone":"","name":"JEAN","surName":"HERNANDEZ","ammount":"750","address":"SANA NTONIO H-9392","inscription_day":"12","inscription_month":"ENE","inscription_year":"2004","due_date_day":"11","due_date_month":"NOV","due_date_year":"20152"}
+                            existingUser.membership: {"id":6654,"createdAt":"2019-01-28T12:37:02.000Z","updatedAt":"2019-01-29T03:21:55.000Z","status":1,"cutDate":"1980-02-01T04:00:00.000Z","monthAmmount":75000,"inscriptionDate":"2004-02-06T04:00:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2004q.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 108 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 135 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 297 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 300 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2008º.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 202 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2009.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 190 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2010.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 289 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 277 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2012.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Fri Feb 01 1980 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Thu Mar 01 2012 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 15000
+                            Cantidad de la base de datos: 140000
+                            //
+                            records[i]: {"ci":"7661895","phone":"","name":"CAROLINA","surName":"HERRERA","ammount":"150","address":"SAN ANTONIO H-1026","inscription_day":"04","inscription_month":"ENE","inscription_year":"2012","due_date_day":"04","due_date_month":"FEB","due_date_year":"2012"}
+                            existingUser.membership: {"id":8173,"createdAt":"2019-01-28T12:41:09.000Z","updatedAt":"2019-01-29T03:21:55.000Z","status":1,"cutDate":"1980-02-01T04:00:00.000Z","monthAmmount":140000,"inscriptionDate":"2012-01-26T04:30:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE20122424.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 231 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2013.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 287 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2014.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 208 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2015.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 100 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2016.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 70 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2017.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 162 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATENE2018.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB1990.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 5 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB1992.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 5 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB1994.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 6 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB1995.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 24 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB1996.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 22 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB1997.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 17 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB1998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 34 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB1999.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 37 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 17 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 48 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2002.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 55 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 70 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2004.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 76 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 73 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 180 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 157 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 83 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2009.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 134 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2010.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 161 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 133 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2012.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 169 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2013.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 186 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2014.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 120 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2015.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 67 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2016.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 54 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2017.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 62 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB2018.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 2 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFEB22008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 3 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATFFEB2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL02.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL1992.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 2 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL1994.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 27 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL1995.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 19 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL1996.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 27 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL1997.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 18 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL1998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 15 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL1999.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 26 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 41 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 63 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2002.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 43 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 87 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2004.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 93 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 218 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 193 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 279 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2008.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Fri Feb 01 1980 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Mon Dec 26 22016 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 300000
+                            Cantidad de la base de datos: 300000
+                            //
+                            records[i]: {"ci":"17034250","phone":"","name":"DANIEL","surName":"RANGEL","ammount":"3.000","address":"SAN ANTONIO R2679","inscription_day":"07","inscription_month":"JUL","inscription_year":"2008","due_date_day":"01","due_date_month":"12","due_date_year":"22016"}
+                            existingUser.membership: {"id":12485,"createdAt":"2019-01-28T12:50:28.000Z","updatedAt":"2019-01-29T03:21:55.000Z","status":1,"cutDate":"1980-02-01T04:00:00.000Z","monthAmmount":300000,"inscriptionDate":"2008-08-03T04:30:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL20081.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 303 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2009.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 192 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2010.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 146 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 247 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2012.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2012000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2012º.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 206 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2013.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 231 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2014.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 111 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2015.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 55 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2016.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 90 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2017.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 112 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUL2018.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN1991.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 3 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN1993.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 3 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN1994.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 8 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN1995.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 23 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN1996.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 28 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN1997.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 26 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN1998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 14 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN1999.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 20 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 19 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 3 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN200125.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 47 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2002.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 27 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 67 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2004.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 82 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 137 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 126 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 162 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 4 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2008169.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 134 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2009.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 127 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2010.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 170 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 129 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2012.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 145 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2013.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 160 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2014.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 86 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2015.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 58 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2016.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 55 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2017.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 93 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2018.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 3 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN2019.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATJUN214.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 4 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR1993.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 7 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR1994.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 8 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR1995.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 19 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR1996.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 22 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR1997.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 10 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR1998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 17 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR1999.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR200.9.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 43 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 39 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 19 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2002.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2002003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 50 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 51 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2004.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 70 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 106 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 2 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR20062001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 155 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 171 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 157 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2009.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 177 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2010.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 140 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 154 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2012.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 136 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2013.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 175 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2014.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 129 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2015.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 89 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2016.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 33 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2017.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 78 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2018.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAR2200006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY1992.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 5 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY1994.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 12 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY1995.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 43 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY1996.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 35 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY1997.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 20 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY1998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 20 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY1999.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 36 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 31 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 66 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2002.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 43 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 64 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2004.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 93 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 154 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 126 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 192 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 136 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2009.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 192 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2010.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 197 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 176 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2012.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 203 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2013.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 177 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2014.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 130 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2015.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 62 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2016.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 23 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2017.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Fri Feb 01 1980 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Sun Aug 20 84378 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 700000
+                            Cantidad de la base de datos: 700000
+                            //
+                            records[i]: {"ci":"16369692","phone":"","name":"SERGIO","surName":"CARTAYA","ammount":"7.000","address":"      C7050","inscription_day":"30","inscription_month":"MAY","inscription_year":"2017","due_date_day":"30081730","due_date_month":"AGO","due_date_year":"2017"}
+                            existingUser.membership: {"id":20026,"createdAt":"2019-01-28T12:57:54.000Z","updatedAt":"2019-01-29T03:21:56.000Z","status":1,"cutDate":"1980-02-01T04:00:00.000Z","monthAmmount":700000,"inscriptionDate":"2017-06-27T04:00:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 43 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMAY2018.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATMMAR2017.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV1993.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 2 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV1994.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 13 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV1995.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 14 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV1996.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 15 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV1997.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 20 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV1998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 23 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV1999.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 23 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV20000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 26 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 48 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2002.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 55 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 67 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2004.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 68 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 157 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 148 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 117 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 74 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2009.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 177 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2010.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 162 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 121 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2012.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 122 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2013.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 133 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2014.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 59 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2015.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 44 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2016.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 294 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2017.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 89 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATNOV2018.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT1993.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 5 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT1994.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 18 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT1995.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 22 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT1996.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 25 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT1997.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 18 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT1998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 38 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT1999.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 2 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT20'17.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 26 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 36 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 67 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2002.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT200215.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 53 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 71 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2004.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 72 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 191 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 191 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2007.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 130 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 100 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2009.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Thu Mar 01 2012 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Thu May 09 20165 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 140000
+                            Cantidad de la base de datos: 140000
+                            //
+                            records[i]: {"ci":"7661895","phone":"","name":"CAROLINA","surName":"HERRERA","ammount":"1.400","address":"SAN ANTONIO H-1026","inscription_day":"20","inscription_month":"OCT","inscription_year":"2009","due_date_day":"11","due_date_month":"ABR","due_date_year":"20165"}
+                            existingUser.membership: {"id":8173,"createdAt":"2019-01-28T12:41:09.000Z","updatedAt":"2019-01-29T03:26:46.000Z","status":1,"cutDate":"2012-03-01T04:00:00.000Z","monthAmmount":140000,"inscriptionDate":"2012-01-26T04:30:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+
+                            ****************************
+                            Fecha de la BD: Mon Feb 26 2018 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Mon Feb 24 21017 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 30000
+                            Cantidad de la base de datos: 500000
+                            //
+                            records[i]: {"ci":"ç10584695","phone":"","name":"PEDRO","surName":"ARREAZA","ammount":"300","address":"SAN ANTONIO A-2183","inscription_day":"14","inscription_month":"OCT","inscription_year":"2009","due_date_day":"01","due_date_month":"FEB","due_date_year":"21017"}
+                            existingUser.membership: {"id":1238,"createdAt":"2019-01-28T12:26:23.000Z","updatedAt":"2019-01-29T03:19:04.000Z","status":1,"cutDate":"2018-02-26T04:00:00.000Z","monthAmmount":500000,"inscriptionDate":"2011-04-25T04:30:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 167 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2010.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 172 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 163 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2012.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 209 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2013.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 200 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2014.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 108 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2015.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 36 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2016.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Sat Jan 20 2018 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Sat Feb 15 201716 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 300000
+                            Cantidad de la base de datos: 1300000
+                            //
+                            records[i]: {"ci":"ç22035541","phone":"","name":"CHRISTIAN","surName":"OTALORA","ammount":"3.000","address":"      O981","inscription_day":"20","inscription_month":"OCT","inscription_year":"2016","due_date_day":"20","due_date_month":"ENE","due_date_year":"201716"}
+                            existingUser.membership: {"id":4952,"createdAt":"2019-01-28T12:33:04.000Z","updatedAt":"2019-01-29T03:25:46.000Z","status":1,"cutDate":"2018-01-20T04:00:00.000Z","monthAmmount":1300000,"inscriptionDate":"2016-09-22T04:00:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 518 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2017.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 128 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATOCT2018.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP1993.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP1994.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 11 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP1995.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 21 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP1996.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 30 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP1997.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 22 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP1998.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 39 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP1999.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 30 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2000.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 31 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2001.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 36 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2002.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 70 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 92 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2004.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 70 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2005.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 182 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2006.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 146 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2007.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Invalid Date
+                            Fecha válida del registro .txt: Mon Feb 26 2018 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): false
+                            !moment(existingUser.membership.cutDate).isValid()): true
+                            Cantidad del registro: 500000
+                            Cantidad de la base de datos: 500000
+                            //
+                            records[i]: {"ci":"'10584695","phone":"","name":"PEDRO","surName":"ARREAZA","ammount":"5.000","address":"","inscription_day":"17","inscription_month":"SEP","inscription_year":"2007","due_date_day":"01","due_date_month":"FEB","due_date_year":"2018"}
+                            existingUser.membership: {"id":1238,"createdAt":"2019-01-28T12:26:23.000Z","updatedAt":"2019-01-29T03:31:23.000Z","status":1,"cutDate":null,"monthAmmount":500000,"inscriptionDate":"2011-04-25T04:30:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+
+                                ****************************
+                                Fecha no válida (en la base de datos): Invalid Date
+                                ****************************                                
+                                
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 159 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2008.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 133 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2009.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 193 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2010.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP201031.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 194 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2011.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 160 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2012.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Fri Feb 01 1980 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Sun Sep 30 51629 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 40000
+                            Cantidad de la base de datos: 40000
+                            //
+                            records[i]: {"ci":"6681324","phone":"","name":"MORELA","surName":"LUNA","ammount":"400","address":"SAN ANTONIO L-1644","inscription_day":"10","inscription_month":"SEP","inscription_year":"2012","due_date_day":"18121418","due_date_month":"DIC","due_date_year":"2014"}
+                            existingUser.membership: {"id":25711,"createdAt":"2019-01-28T13:04:42.000Z","updatedAt":"2019-01-29T03:21:56.000Z","status":1,"cutDate":"1980-02-01T04:00:00.000Z","monthAmmount":40000,"inscriptionDate":"2012-10-03T04:30:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 161 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2013.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 217 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2014.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                            ****************************
+                            Fecha de la BD: Mon Jan 14 2019 00:00:00 GMT-0400 (-04)
+                            Fecha válida del registro .txt: Sun Sep 03 20175 00:00:00 GMT-0400 (-04)
+                            moment(records[i].getCutDate()).isAfter(existingUser.membership.cutDate): true
+                            !moment(existingUser.membership.cutDate).isValid()): false
+                            Cantidad del registro: 100000
+                            Cantidad de la base de datos: 100000
+                            //
+                            records[i]: {"ci":"'22667514","phone":"","name":"JESSICA","surName":"TRIANA","ammount":"1.000","address":"SAN ANTONIO T-952","inscription_day":"22","inscription_month":"SEP","inscription_year":"2014","due_date_day":"7","due_date_month":"AGO","due_date_year":"20175"}
+                            existingUser.membership: {"id":4764,"createdAt":"2019-01-28T12:32:41.000Z","updatedAt":"2019-01-29T03:25:42.000Z","status":1,"cutDate":"2019-01-14T04:00:00.000Z","monthAmmount":100000,"inscriptionDate":"2014-08-30T04:30:00.000Z","company":null,"user":null}
+                            ****************************
+                            
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 109 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2015.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 42 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2016.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 115 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2017.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 98 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATSEP2018.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                    *****************************
+                    Se obtuvieron 7917 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATtemENE2003.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  ===============================================
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/BASDATº1998.txt
+                    Almacenando...
+                    *****************************
+                    
+
+                    *****************************
+                    Se obtuvieron 1 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/FechaInsA.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  11
+
+                    *****************************
+                    Se obtuvieron 0 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/FechaInsD.txt
+                    Almacenando...
+                    *****************************
+                    
+CÉDULA INVÁLIDA:  OCT
+
+                    *****************************
+                    Se obtuvieron 0 registro del archivo /home/azolot/Documents/Projects/flamingo/data_prueba/GYM/FechaInsM.txt
+                    Almacenando...
+                    *****************************
+                    
+
+        
+        Start date: Mon Jan 28 2019 23:24:13 GMT-0400 (-04)
+        Finish date: Mon Jan 28 2019 23:34:57 GMT-0400 (-04)
+        Ellapsed: 644
+        
+        
+    ✓ Should import the users from the database (644540ms)
+
+  Should test Database Backup / restore
+    - Should back-up the database
+    - Should restore the database
+
+  Test the SocketJS Endpoints
+    Tests the SuperAdmin functions
+      - Should test the SuperAdmin - Creation
+      - Should test the SuperAdmin - Login and LogOut
+      - Should test the SuperAdmin Update.
+    Tests the Admin functions
+      - Creates 3 Admin Accounts
+      - LogIn and LogOut
+      - Updates an admin profile
+      - Update an Admin Role
+      - Should remove admin2 and admin3
+      - Should not log-in with a deleted account
+      - Should restore admin2 (logical)
+    Tests the Client Functions
+      - Should test the Client - Creation
+      - Should test the Client - Update
+      - Should test the Client Payment - Add
+      - Should test the Client - Deletion (Desincorporate / Desincorporation)
+      - Should test the Client - Restore (logical)
+    Test Search
+      - Should test client search
+      - Should test the payment search
+    Should test Database Backup / restore
+      - Should back-up the database
+      - Should restore the database
+      - Should upload a dump via file upload and restore the database
+    Should test basic system routes
+      - Should update the company
+      - Should get the company
+      - Should get the currencies
+      - Should get the payment methods
+      - Should get the document types
+      - Should get the base roles
+      - Should get the personal profile (+ tables)
+      - Should test the log search
+      - Should get the list of backups
+      - Should test the backup download
+
+
+  1 passing (11m)
+  56 pending
+

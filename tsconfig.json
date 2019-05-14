@@ -1,0 +1,23 @@
+{
+  "include": [
+      "src/**/*"
+  ],
+  "exclude": [
+      "node_modules",
+      "!node_modules/@types",
+      "**/*.spec.ts"
+  ],
+ "compilerOptions": {
+      "lib": ["es2017"],        // No need for "es5" if you have "es6"
+      "types": ["node"],      // When you code for nodejs
+      "target": "es2017",       // NodeJs v8.9.3 supports most of the es6 features
+      "pretty": true,
+      "module": "commonjs",
+      "outDir": "./build",
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "sourceMap": true
+ }
+}

@@ -1,0 +1,16 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "1.0.0",
+    "tasks": [
+        {
+            "label": "Delete Test Database",
+            "type": "shell",
+            "command": "rm /home/azolot/Documents/Projects/flamingo/DEV/main/server/test.sqlite",
+            "windows": {
+                "command": "rm /home/azolot/Documents/Projects/flamingo/DEV/main/server/test.sqlite"
+            },
+            "group": "test"
+        }
+    ]
+}

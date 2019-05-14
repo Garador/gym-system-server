@@ -1,0 +1,5 @@
+export enum PAYMENT_METHODS {
+    CASH = 0,
+    ELECTRONIC_TRANSFERENCE = 1,
+    DEPOSIT = 2    
+}

@@ -1,0 +1,17 @@
+Logical Delete:
+    Super-Admin:
+        IF: Has made any of these actions:
+            -Added/Updated/Deleted Admins.
+            -Added/Updated/Deleted Payment Methods.
+            -Added/Updated/Deleted Business Details.
+
+    Admin:
+        IF: Has made any of these actions:
+            -Added/Updated/Deleted Clients.
+            -Added/Updated/Deleted Clients.
+            -Added/Updated/Deleted Clients Memberships.
+            -Added/Updated/Deleted Clients Contacts.
+            -Added/Updated/Deleted Payments.
+    Client:
+        SI: Has related the next records:
+            -Payments
